@@ -5,6 +5,7 @@ import RoleSelection from './pages/RoleSelection';
 import RecyclePlant from './pages/RecyclePlant';
 import FundProvider from './pages/FundProvider';
 import FundProviderDashBoard from './pages/FundProviderDashBoard';
+import PlantDashboard from './pages/PlantsDashBoard';
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
       <Route path="/RecyclePlant" element={<RecyclePlant/>} />
       <Route path="/FundProvider" element={<FundProvider/>} />
       <Route path="/FundProviderDashBoard" element={<FundProviderDashBoard/>} />
+      <Route path="/PlantDashboard" element={<PlantDashboard/>} />
     </Routes>
     </BrowserRouter>
     
