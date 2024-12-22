@@ -10,7 +10,7 @@ const PORT = 5000;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
-const groq = new Groq({ apiKey: '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' });
+const groq = new Groq({ apiKey: '' });
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://akshat05p:kjkszpj@recyclechain.x2cps.mongodb.net/', {
