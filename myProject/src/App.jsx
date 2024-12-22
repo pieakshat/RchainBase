@@ -6,8 +6,12 @@ import RecyclePlant from './pages/RecyclePlant';
 import FundProvider from './pages/FundProvider';
 import FundProviderDashBoard from './pages/FundProviderDashBoard';
 import PlantDashboard from './pages/PlantsDashBoard';
+import { WalletProvider } from './context/walletContext';
+import CompanyList from './components/CompanyList';
+
 function App() {
   return (
+    <WalletProvider>
     <BrowserRouter>
     <Routes>
       <Route path="/"  element={<HomePage/>} />
@@ -16,8 +20,10 @@ function App() {
       <Route path="/FundProvider" element={<FundProvider/>} />
       <Route path="/FundProviderDashBoard" element={<FundProviderDashBoard/>} />
       <Route path="/PlantDashboard" element={<PlantDashboard/>} />
+      <Route path="/CompanyList" element={<CompanyList/>} />
     </Routes>
     </BrowserRouter>
+    </WalletProvider>
     
   );
 }

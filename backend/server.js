@@ -97,6 +97,16 @@ const fundValidationSchema = Joi.object({
   email: Joi.string().email().required(),
 });
 
+
+app.get('/companies', async (req, res) => {
+    try {
+      const companies = await RecyclePlant.find();
+      res.json(companies);
+    } catch (error) {
+      res.status(500).send('Error fetching companies');
+    }
+  });
+
 app.post('/finalFund', async (req, res) => {
   const { error } = fundValidationSchema.validate(req.body);
 
