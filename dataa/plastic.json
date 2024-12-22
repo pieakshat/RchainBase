@@ -1,0 +1,34 @@
+{
+    "plasticTypes": [
+        {
+            "type": "PET",
+            "recyclingCost": 300,
+            "demand": 95
+        },
+        {
+            "type": "HDPE",
+            "recyclingCost": 350,
+            "demand": 90
+        },
+        {
+            "type": "PVC",
+            "recyclingCost": 800,
+            "demand": 40
+        },
+        {
+            "type": "LDPE",
+            "recyclingCost": 600,
+            "demand": 70
+        },
+        {
+            "type": "PP",
+            "recyclingCost": 550,
+            "demand": 75
+        },
+        {
+            "type": "PS",
+            "recyclingCost": 900,
+            "demand": 30
+        }
+    ]
+}
